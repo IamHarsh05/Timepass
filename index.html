@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div class="side" id="side1">
+            <video src="bg.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+        <div class="side" id="side2">
+            <video src="bg.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="content">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsam recusandae accusamus quia maiores eius pariatur eaque repudiandae. Pariatur praesentium cupiditate possimus rem fugit aliquam, laborum rerum quis reprehenderit veniam ex consequuntur dolor excepturi perferendis fugiat soluta eos, nostrum laudantium facere id recusandae corporis in. Hic at ullam doloribus eligendi illum quas commodi aperiam fugiat vitae repellat possimus a quisquam, nam adipisci eos autem cum, et voluptatibus quis rem. Incidunt itaque reprehenderit repudiandae sit iste eius id necessitatibus nulla expedita doloremque illo dolores consequuntur minus, sint nobis repellat. Totam labore debitis quam omnis est assumenda eaque alias! Alias ratione, placeat eius nobis nesciunt nostrum possimus fuga architecto exercitationem quo, vitae et hic, ipsa quaerat amet aliquam dicta. Veniam illo veritatis distinctio architecto libero rerum exercitationem, molestias assumenda impedit quasi in obcaecati, sed quis aperiam adipisci, culpa porro expedita suscipit. Exercitationem assumenda nesciunt magni error veniam voluptatibus! Nobis possimus magni pariatur.</p>
+    </div>
+    <script>
+        let side1 = document.getElementById('side1');
+        let side2 = document.getElementById('side2');
+
+        window.addEventListener('scroll', function()
+        {
+            side1.style.left = -window.pageYOffset+'px';
+            side2.style.left = window.pageYOffset+'px';
+        })
+    </script>
+</body>
+</html>
